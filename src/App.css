@@ -1,0 +1,14 @@
+.App {
+  width: 1440px;
+  height: 800px;
+  background-color: #f9faff;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "menu": {
+      "items": [
+        {
+          "text": "Testimonial",
+          "route": "/Testimonial"
+        },
+        {
+          "text": "Configurator",
+          "route": "/Configurator"
+        },
+        {
+          "text": "Stories",
+          "route": "#"
+        },
+        {
+          "text": "About",
+          "route": "#"
+        }
+      ]
+    }
+}
