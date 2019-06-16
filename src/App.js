@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import Navigation from './components/Navigation'
+import Navigation from './components/Navigation';
 import Testimonial from './components/Testimonial';
 import Calculator from './components/Calculator';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 class App extends Component {
   

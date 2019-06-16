@@ -9,8 +9,6 @@ class Testimonial extends Component {
         this.state = {
             testimonials: [],
         }
-
-        this.handleClick = this.handleClick.bind(this);
     }
     
     componentDidMount() {
@@ -20,20 +18,12 @@ class Testimonial extends Component {
             })
     }
 
-    handleClick() {
-
-        this.setState(state => ({
-          isToggleOn: !state.isToggleOn
-        }));
-    }
-
     render() {
         const { testimonials } = this.state;
         return(
-            <div>
+            <section>
                 <div className="marquee">
-                    
-                    <p className="text-customer"> {testimonials.slider!==undefined?testimonials.slider.title:'Hi'} </p>
+                    <p className="text-customer"> {testimonials.slider!==undefined?testimonials.slider.title:'Error'} </p>
                 </div>
                 <div className="centered-info">
                     <div>
@@ -43,14 +33,10 @@ class Testimonial extends Component {
                             <div className="text-position">{review.position}</div>
                             <div className="inside">{review.comment}</div>
                         </div>
-                        )):'Hi'}
-                        
+                        )):'Error'}
                     </div>
                 </div>
-                <button onClick={this.handleClick}>
-                    {this.state.isToggleOn ? 'ON' : 'OFF'}
-                </button>
-            </div>
+            </section>
         );
     }
 }

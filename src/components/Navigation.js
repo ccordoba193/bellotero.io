@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import './Navigation.css';
 import axios from 'axios';
 import logo from './../bellotero.png';
-import { Route, BrowserRouter } from 'react-router-dom';
-import Testimonial from './Testimonial.js'
 
 class Navigation extends Component {
 
@@ -28,17 +26,11 @@ class Navigation extends Component {
                 <header className="App-header">
                     <div className="topnav">
                         <img src={logo} alt="text" className="App-logo"/>
-                        
                         <div className="topnav-right menu">
-                            <BrowserRouter>
-                            {app.menu!==undefined?app.menu.items.map( (item, index) => (
-                                <Route path={item.route} component={Testimonial}> 
-                                    <a href={item.text}>{item.text}</a>
-                                </Route>
+                            {app.menu!==undefined?app.menu.items.map( (item) => (
+                                <a href={item.text}>{item.text}</a>
                             )):'hi'}
-                            </BrowserRouter>
-                        </div>
-                        
+                        </div> 
                     </div>
                 </header>
             </div>

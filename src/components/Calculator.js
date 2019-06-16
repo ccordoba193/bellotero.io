@@ -3,8 +3,7 @@ import InputRange from "react-input-range";
 import axios from 'axios';
 import Display from "./Display";
 
-
-import "./Config.css";
+import "./Calculator.css";
 import "react-input-range/lib/css/index.css";
 
 class Calculator extends Component {
@@ -42,14 +41,13 @@ class Calculator extends Component {
         <section className="row">
           <div>
               <div className="content">
-                  <div className="save-more">{text.calculator!==undefined?text.calculator.title:'hi'}</div>
+                  <div className="save-more">{text.calculator!==undefined?text.calculator.title:'Error'}</div>
                   <br></br>
                   <br></br>
                   <br></br>
                   <br></br>
                   <div className="with-bellotero">
-                  {text.calculator!==undefined?text.calculator.description:'hi'}
-                      
+                    {text.calculator!==undefined?text.calculator.description:'Error'}
                   </div>
               </div>
           </div>
